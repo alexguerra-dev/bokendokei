@@ -25,6 +25,17 @@ export default function LoginPage() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
+        await handleLogin()
+    }
+
+    const handleKeyPress = (e: React.KeyboardEvent) => {
+        if (e.key === 'Enter' && passcode.length === 4) {
+            // Call login directly when Enter is pressed
+            handleLogin()
+        }
+    }
+
+    const handleLogin = async () => {
         if (passcode.length !== 4) {
             setError('Please enter a 4-digit passcode')
             return
@@ -46,12 +57,6 @@ export default function LoginPage() {
         }
 
         setIsLoading(false)
-    }
-
-    const handleKeyPress = (e: React.KeyboardEvent) => {
-        if (e.key === 'Enter' && passcode.length === 4) {
-            handleSubmit(e as any)
-        }
     }
 
     return (

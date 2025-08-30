@@ -1,13 +1,7 @@
 'use client'
 
-import React, {
-    createContext,
-    useContext,
-    useState,
-    useEffect,
-    ReactNode,
-} from 'react'
-import { Adventurer, Pal, Challenge, MoodEntry } from '../types'
+import React, { createContext, useContext, useState, ReactNode } from 'react'
+import { Adventurer, Pal, MoodType } from '../types'
 
 interface AppContextType {
     currentAdventurer: Adventurer | null
@@ -119,7 +113,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
     const updateMood = (mood: string) => {
         if (currentPal) {
-            const updatedPal = { ...currentPal, mood: mood as any }
+            const updatedPal = { ...currentPal, mood: mood as MoodType }
             setCurrentPal(updatedPal)
         }
     }

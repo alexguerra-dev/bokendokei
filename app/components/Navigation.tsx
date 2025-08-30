@@ -27,7 +27,7 @@ export default function Navigation() {
                         <div className="text-2xl mb-2">😊</div>
                         <h4 className="font-semibold mb-1">Mood Tracker</h4>
                         <p className="text-green-100 text-sm">
-                            Update your Pal's mood
+                            Update your Pal&apos;s mood
                         </p>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ export default function Navigation() {
                 </h4>
                 <ul className="text-sm text-blue-700 space-y-1">
                     <li>• Complete challenges daily to earn gold</li>
-                    <li>• Keep your Pal's mood updated</li>
+                    <li>• Keep your Pal&apos;s mood updated</li>
                     <li>• Use your gold to buy gear and customize</li>
                     <li>• Check your adventure journal regularly</li>
                 </ul>
