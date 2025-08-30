@@ -1,3 +1,9 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
 # Game Design & Habit Tracking Patterns
 
 ## Core Game Mechanics
@@ -55,8 +61,3 @@ interface Achievement {
 -   Cache user progress locally when possible
 -   Implement offline support for basic tracking
 -   Use optimistic updates for better UX
-    description:
-    globs:
-    alwaysApply: true
-
----

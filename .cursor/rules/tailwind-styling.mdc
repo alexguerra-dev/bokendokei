@@ -1,3 +1,9 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
 # Tailwind CSS Styling Guidelines
 
 ## Tailwind v4 Usage
@@ -51,8 +57,57 @@
 -   Create reusable button, card, and input styles
 -   Use consistent spacing and sizing
 -   Maintain visual hierarchy through typography and spacing
-    description:
-    globs:
-    alwaysApply: true
 
----
+# Tailwind CSS Styling Guidelines
+
+## Tailwind v4 Usage
+
+-   Use Tailwind CSS v4 classes for all styling
+-   Leverage the new color system and design tokens
+-   Use semantic color names when possible
+-   Follow mobile-first responsive design
+
+## Class Organization
+
+-   Group related classes logically: layout → spacing → typography → colors → effects
+-   Use consistent spacing scale: `p-4`, `m-2`, `gap-3`
+-   Prefer Tailwind utilities over custom CSS
+-   Use component variants for repeated patterns
+
+## Common Patterns
+
+```tsx
+// Good: Logical class grouping
+<div className="
+  flex flex-col gap-4 p-6
+  bg-white rounded-lg shadow-md
+  border border-gray-200
+  hover:shadow-lg transition-shadow
+">
+  <h2 className="text-xl font-semibold text-gray-900">
+    Habit Tracker
+  </h2>
+  <p className="text-gray-600">
+    Track your daily habits
+  </p>
+</div>
+
+// Good: Responsive design
+<div className="
+  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+  gap-4 md:gap-6 lg:gap-8
+">
+```
+
+## Color System
+
+-   Use semantic colors: `text-gray-900`, `bg-blue-500`
+-   Maintain consistent color palette across components
+-   Use opacity modifiers: `bg-blue-500/10`
+-   Follow accessibility guidelines for contrast
+
+## Component Variants
+
+-   Create reusable button, card, and input styles
+-   Use consistent spacing and sizing
+-   Maintain visual hierarchy through typography and spacing

@@ -1,3 +1,9 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
 # React & Next.js Development Patterns
 
 ## React 19 Best Practices
@@ -44,8 +50,3 @@ export default function Component({ title, onAction }: ComponentProps) {
 -   Use absolute imports with `@/*` alias: `import { Button } from '@/components/ui/button'`
 -   Group imports: external libraries first, then internal components
 -   Use named exports for components
-    description:
-    globs:
-    alwaysApply: true
-
----

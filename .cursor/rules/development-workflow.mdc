@@ -1,3 +1,9 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
 # Development Workflow & Best Practices
 
 ## Code Quality
@@ -41,8 +47,3 @@
 -   Document API endpoints and data models
 -   Maintain component storybook or examples
 -   Update README with setup instructions
-    description:
-    globs:
-    alwaysApply: true
-
----
