@@ -1,0 +1,40 @@
+# Bōkendokei Project Overview
+
+## Project Purpose
+
+Bōkendokei is a habit-tracking adventure game where users "Keep track of your adventures. Get loot. Buy gear." The core vision is to make habit formation fun and engaging through gamification.
+
+## Tech Stack
+
+-   **Frontend**: Next.js 15 + React 19 + TypeScript
+-   **Styling**: Tailwind CSS v4
+-   **Build Tool**: Turbopack enabled
+-   **Linting**: ESLint with Next.js config
+-   **Path Aliases**: `@/*` maps to workspace root
+
+## Project Structure
+
+-   Main app entry: [app/page.tsx](mdc:app/page.tsx)
+-   App layout: [app/layout.tsx](mdc:app/layout.tsx)
+-   Global styles: [app/globals.css](mdc:app/globals.css)
+-   Documentation: [doc/bokendokei.md](mdc:doc/bokendokei.md), [doc/look.md](mdc:doc/look.md)
+-   Configuration: [tsconfig.json](mdc:tsconfig.json), [next.config.ts](mdc:next.config.ts)
+
+## Development Commands
+
+-   `yarn dev` - Start development server with Turbopack
+-   `yarn build` - Build for production with Turbopack
+-   `yarn lint` - Run ESLint
+
+## Key Principles
+
+-   Make habit formation fun through gamification
+-   Focus on MVP features first
+-   Use modern React patterns (React 19)
+-   Maintain clean TypeScript code
+-   Follow Next.js 15 best practices
+    description:
+    globs:
+    alwaysApply: true
+
+---

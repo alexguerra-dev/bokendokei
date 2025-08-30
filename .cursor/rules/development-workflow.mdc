@@ -1,0 +1,48 @@
+# Development Workflow & Best Practices
+
+## Code Quality
+
+-   Run `yarn lint` before committing
+-   Use TypeScript strict mode (already configured)
+-   Follow consistent naming conventions
+-   Write self-documenting code with clear variable names
+
+## Git Workflow
+
+-   Use descriptive commit messages
+-   Create feature branches for new functionality
+-   Keep commits focused and atomic
+-   Update documentation when adding new features
+
+## Testing Strategy
+
+-   Write unit tests for utility functions
+-   Test component behavior and interactions
+-   Use React Testing Library for component tests
+-   Implement integration tests for critical user flows
+
+## Performance Monitoring
+
+-   Use Next.js built-in performance tools
+-   Monitor Core Web Vitals
+-   Optimize images and assets
+-   Implement proper loading states
+
+## Deployment
+
+-   Use Turbopack for faster builds
+-   Optimize bundle size
+-   Implement proper error tracking
+-   Use environment variables for configuration
+
+## Documentation
+
+-   Keep [doc/bokendokei.md](mdc:doc/bokendokei.md) updated
+-   Document API endpoints and data models
+-   Maintain component storybook or examples
+-   Update README with setup instructions
+    description:
+    globs:
+    alwaysApply: true
+
+---

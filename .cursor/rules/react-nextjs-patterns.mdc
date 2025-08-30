@@ -1,0 +1,51 @@
+# React & Next.js Development Patterns
+
+## React 19 Best Practices
+
+-   Use React 19's new features and patterns
+-   Prefer function components with hooks
+-   Use TypeScript for all component props and state
+-   Implement proper error boundaries
+
+## Next.js 15 App Router
+
+-   Use the new app directory structure
+-   Leverage server components by default
+-   Use client components only when necessary (interactivity, browser APIs)
+-   Implement proper loading and error states
+
+## Component Structure
+
+```tsx
+// Good: Proper TypeScript interfaces
+interface ComponentProps {
+    title: string
+    onAction?: () => void
+}
+
+export default function Component({ title, onAction }: ComponentProps) {
+    return (
+        <div className="...">
+            <h1>{title}</h1>
+            {onAction && <button onClick={onAction}>Action</button>}
+        </div>
+    )
+}
+```
+
+## File Naming
+
+-   Use kebab-case for file names: `habit-tracker.tsx`
+-   Use PascalCase for component names: `HabitTracker`
+-   Use descriptive names that reflect component purpose
+
+## Import Patterns
+
+-   Use absolute imports with `@/*` alias: `import { Button } from '@/components/ui/button'`
+-   Group imports: external libraries first, then internal components
+-   Use named exports for components
+    description:
+    globs:
+    alwaysApply: true
+
+---

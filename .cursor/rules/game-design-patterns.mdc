@@ -1,0 +1,62 @@
+# Game Design & Habit Tracking Patterns
+
+## Core Game Mechanics
+
+-   **Adventure Theme**: Frame habits as quests and adventures
+-   **Progression System**: Users level up through consistent habit completion
+-   **Reward System**: Loot, gear, and achievements for habit streaks
+-   **Social Elements**: Share achievements and compete with friends
+
+## Habit Tracking Patterns
+
+```tsx
+// Good: Habit data structure
+interface Habit {
+    id: string
+    name: string
+    description: string
+    category: 'health' | 'productivity' | 'learning' | 'social'
+    difficulty: 'easy' | 'medium' | 'hard'
+    frequency: 'daily' | 'weekly' | 'monthly'
+    streak: number
+    totalCompletions: number
+    experiencePoints: number
+    level: number
+}
+
+// Good: Achievement system
+interface Achievement {
+    id: string
+    name: string
+    description: string
+    icon: string
+    unlockedAt?: Date
+    requirements: AchievementRequirement[]
+}
+```
+
+## User Experience Principles
+
+-   **Immediate Feedback**: Visual and audio feedback for habit completion
+-   **Progress Visualization**: Clear progress bars, charts, and milestones
+-   **Gamification**: Points, badges, and leaderboards
+-   **Accessibility**: Support for different ability levels and preferences
+
+## Data Persistence
+
+-   Track habit completion dates and times
+-   Store user progress and achievements
+-   Maintain streak calculations
+-   Save user preferences and settings
+
+## Performance Considerations
+
+-   Optimize for frequent habit check-ins
+-   Cache user progress locally when possible
+-   Implement offline support for basic tracking
+-   Use optimistic updates for better UX
+    description:
+    globs:
+    alwaysApply: true
+
+---

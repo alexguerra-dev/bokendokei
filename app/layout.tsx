@@ -16,24 +16,7 @@ export const metadata: Metadata = {
         'Tailwind CSS',
     ],
     authors: [{ name: 'Bōkendokei Team' }],
-    openGraph: {
-        title: 'Bōkendokei - Track Your Adventures',
-        description:
-            'Keep track of your adventures. Get loot. Buy gear. Make habits fun!',
-        url: 'https://bokendokei.lovelyvector.com',
-        siteName: 'Bōkendokei',
-        images: [
-            {
-                url: '/og-image.png',
-                width: 1200,
-                height: 630,
-                alt: 'Bōkendokei App Preview',
-            },
-        ],
-        locale: 'en_US',
-        type: 'website',
-    },
-    themeColor: '#38bdf8',
+
     manifest: '/site.webmanifest',
 }
 

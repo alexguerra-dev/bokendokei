@@ -1,0 +1,54 @@
+# TypeScript Coding Standards
+
+## Type Definitions
+
+-   Always define interfaces for component props
+-   Use descriptive type names: `HabitData` not `Data`
+-   Prefer interfaces over types for object shapes
+-   Use union types for variants: `'daily' | 'weekly' | 'monthly'`
+
+## Strict TypeScript
+
+-   Enable strict mode (already configured in [tsconfig.json](mdc:tsconfig.json))
+-   Use proper typing for all variables and functions
+-   Avoid `any` type - use `unknown` if type is truly unknown
+-   Use type guards for runtime type checking
+
+## Example Patterns
+
+```tsx
+// Good: Proper typing
+interface Habit {
+    id: string
+    name: string
+    frequency: 'daily' | 'weekly' | 'monthly'
+    completedDates: string[]
+    createdAt: Date
+}
+
+// Good: Generic functions
+function filterHabits<T extends Habit>(
+    habits: T[],
+    predicate: (habit: T) => boolean,
+): T[] {
+    return habits.filter(predicate)
+}
+
+// Good: Type-safe event handlers
+const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    // form logic
+}
+```
+
+## Error Handling
+
+-   Use Result types or proper error handling
+-   Define custom error types when needed
+-   Use optional chaining and nullish coalescing
+-   Validate data at runtime when necessary
+    description:
+    globs:
+    alwaysApply: true
+
+---
