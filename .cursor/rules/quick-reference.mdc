@@ -1,0 +1,52 @@
+# Quick Reference Guide
+
+## Project Quick Facts
+
+-   **Name**: Bōkendokei (冒険道計)
+-   **Purpose**: Fun habit tracking with gamification
+-   **Theme**: D&D + Chibi aesthetic
+-   **Users**: Family members (Alex, Teresa, River, Finn)
+
+## Key Components to Build
+
+1. **Login Page** - 4-digit passcode entry
+2. **Adventurer Dashboard** - Personal stats and Pal
+3. **Mood Selector** - 10 mood buttons for Pal
+4. **Challenge Logger** - Quick task completion
+5. **Settings Page** - Pal customization
+6. **Adventure Journal** - Mood history and notes
+
+## Common Patterns
+
+-   Use `rounded-lg` for soft, chibi-style elements
+-   Implement `hover:scale-105` for interactive feedback
+-   Use `transition-all duration-200` for smooth animations
+-   Follow mobile-first responsive design
+
+## File Naming
+
+-   Pages: `page.tsx`
+-   Layouts: `layout.tsx`
+-   Components: `ComponentName.tsx`
+-   Utilities: `utils.ts`
+
+## Quick Commands
+
+-   `npm run dev` - Start development server
+-   `npm run build` - Build for production
+-   `npm run lint` - Run ESLint
+
+## Key Dependencies
+
+-   Next.js 15 (App Router)
+-   React 19
+-   TypeScript
+-   Tailwind CSS v4
+-   Turbopack (dev)
+
+## Future Considerations
+
+-   Supabase integration for backend
+-   Proper authentication system
+-   Image export functionality
+-   Rest/sleep tracking features

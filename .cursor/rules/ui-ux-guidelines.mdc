@@ -1,0 +1,52 @@
+# UI/UX Guidelines
+
+## Visual Design Philosophy
+
+-   **Chibi Style**: Cute, rounded, soft elements throughout
+-   **D&D Theme**: Adventure and fantasy aesthetic
+-   **Family-Friendly**: Accessible to all ages
+-   **Low-Resolution Sprites**: Retro pixel art style for Pals
+
+## Color Scheme
+
+-   Use Tailwind's color palette as base
+-   Primary: Blue tones (#38bdf8 from metadata)
+-   Secondary: Warm, friendly colors
+-   Background: Soft, neutral tones
+-   Ensure good contrast for accessibility
+
+## Typography
+
+-   Use Tailwind's font system
+-   Prioritize readability over decorative fonts
+-   Maintain consistent hierarchy
+-   Consider font sizes for mobile-first design
+
+## Component Design Patterns
+
+-   **Rounded Corners**: Use `rounded-lg` or `rounded-xl` for soft appearance
+-   **Shadows**: Subtle shadows for depth (`shadow-sm`, `shadow-md`)
+-   **Spacing**: Consistent padding and margins using Tailwind scale
+-   **Transitions**: Smooth animations for interactions
+
+## User Experience Patterns
+
+-   **Quick Access**: 4-digit code entry with auto-focus
+-   **Large Touch Targets**: Minimum 44px for mobile interactions
+-   **Visual Feedback**: Immediate response to user actions
+-   **Progressive Disclosure**: Show options step-by-step
+
+## Interaction Design
+
+-   **Mood Selection**: 10 large, clearly labeled mood buttons
+-   **Color Picker**: Intuitive color selection for Pal customization
+-   **Challenge Logging**: Simple, rewarding completion flow
+-   **Navigation**: Clear, consistent navigation patterns
+
+## Accessibility
+
+-   Maintain WCAG AA compliance
+-   Use semantic HTML elements
+-   Provide alternative text for images
+-   Ensure keyboard navigation support
+-   Test with screen readers

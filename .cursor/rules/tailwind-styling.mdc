@@ -1,0 +1,59 @@
+# Tailwind CSS v4 Styling Guide
+
+## Core Design Principles
+
+-   **Mobile-First**: Start with mobile styles, then enhance for larger screens
+-   **Utility-First**: Use Tailwind utility classes over custom CSS
+-   **Consistent Spacing**: Use Tailwind's spacing scale (4px increments)
+-   **Semantic Colors**: Use Tailwind's color palette with semantic naming
+
+## Layout & Spacing
+
+-   Use `container` for main content width
+-   Use `px-4`, `px-6`, `px-8` for horizontal padding
+-   Use `py-4`, `py-6`, `py-8` for vertical padding
+-   Use `space-y-*` for consistent element spacing
+-   Use `gap-*` for grid and flexbox spacing
+
+## Component Styling
+
+-   **Cards**: `bg-white rounded-lg shadow-md p-6`
+-   **Buttons**: `px-6 py-3 rounded-lg font-medium transition-colors`
+-   **Inputs**: `border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500`
+-   **Containers**: `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`
+
+## Color Usage
+
+-   **Primary**: `bg-blue-500`, `text-blue-600`, `border-blue-300`
+-   **Secondary**: `bg-gray-100`, `text-gray-700`, `border-gray-200`
+-   **Success**: `bg-green-500`, `text-green-600`
+-   **Warning**: `bg-yellow-500`, `text-yellow-600`
+-   **Error**: `bg-red-500`, `text-red-600`
+
+## Typography
+
+-   **Headings**: `text-2xl`, `text-3xl`, `text-4xl` with `font-bold`
+-   **Body**: `text-base`, `text-lg` with `text-gray-700`
+-   **Small**: `text-sm`, `text-xs` for secondary information
+-   **Links**: `text-blue-600 hover:text-blue-800 underline`
+
+## Responsive Design
+
+-   Use responsive prefixes: `sm:`, `md:`, `lg:`, `xl:`
+-   Implement proper breakpoint strategies
+-   Test on multiple screen sizes
+-   Use `hidden` and `block` for responsive visibility
+
+## Interactive States
+
+-   **Hover**: `hover:bg-blue-600`, `hover:scale-105`
+-   **Focus**: `focus:ring-2 focus:ring-blue-500 focus:outline-none`
+-   **Active**: `active:scale-95`
+-   **Disabled**: `opacity-50 cursor-not-allowed`
+
+## Animation & Transitions
+
+-   Use `transition-all duration-200 ease-in-out`
+-   Implement `hover:scale-105` for interactive elements
+-   Use `animate-pulse` for loading states
+-   Consider `transform` for smooth animations

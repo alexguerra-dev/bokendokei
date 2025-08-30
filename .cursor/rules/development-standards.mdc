@@ -1,0 +1,44 @@
+# Development Standards
+
+## Code Style & Conventions
+
+-   Use TypeScript for all new code
+-   Follow Next.js 15 App Router patterns
+-   Use React 19 features and patterns
+-   Prefer functional components with hooks
+-   Use proper TypeScript types and interfaces
+
+## File Organization
+
+-   Keep components in `app/` directory following Next.js conventions
+-   Use descriptive, kebab-case filenames
+-   Group related components in subdirectories when needed
+-   Keep utility functions in dedicated files
+
+## Component Structure
+
+-   Export components as default exports
+-   Use proper TypeScript interfaces for props
+-   Include JSDoc comments for complex components
+-   Keep components focused and single-purpose
+
+## Styling Guidelines
+
+-   Use Tailwind CSS classes exclusively
+-   Follow mobile-first responsive design
+-   Maintain consistent spacing using Tailwind's spacing scale
+-   Use semantic color names from Tailwind palette
+
+## State Management
+
+-   Use React hooks for local state
+-   Keep state as close to where it's used as possible
+-   Consider context for shared state across components
+-   Plan for future Supabase integration
+
+## Performance Considerations
+
+-   Use Next.js Image component for images
+-   Implement proper loading states
+-   Consider code splitting for larger components
+-   Use React.memo for expensive components when needed

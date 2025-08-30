@@ -1,0 +1,53 @@
+# Next.js 15 App Router Patterns
+
+## File Structure & Conventions
+
+-   Use `app/` directory for all pages and components
+-   Follow Next.js 15 file-based routing conventions
+-   Use `page.tsx` for route pages
+-   Use `layout.tsx` for shared layouts
+-   Use `loading.tsx` for loading states
+-   Use `error.tsx` for error boundaries
+
+## Page Components
+
+-   Export as default functions
+-   Use proper TypeScript types
+-   Implement proper metadata when needed
+-   Use Next.js Image component for images
+-   Implement proper loading and error states
+
+## Layout Structure
+
+-   Use nested layouts for complex page hierarchies
+-   Keep layouts focused and reusable
+-   Implement proper metadata in root layout
+-   Use proper HTML semantic structure
+
+## Data Fetching
+
+-   Use Server Components by default
+-   Implement Client Components only when needed
+-   Use proper async/await patterns
+-   Plan for future Supabase integration
+
+## Routing Patterns
+
+-   Use dynamic routes with `[param]` syntax
+-   Implement proper route groups when needed
+-   Use parallel routes for complex layouts
+-   Implement proper 404 handling
+
+## Performance Optimizations
+
+-   Use Turbopack for development
+-   Implement proper image optimization
+-   Use Next.js built-in performance features
+-   Consider code splitting strategies
+
+## Metadata & SEO
+
+-   Use proper metadata objects
+-   Implement Open Graph tags
+-   Use semantic HTML elements
+-   Ensure proper accessibility attributes
