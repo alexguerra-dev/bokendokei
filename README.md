@@ -2,7 +2,7 @@
 
 > Keep track of your adventures. Get loot. Buy gear.
 
-## Getting Started
+## Getting Developing
 
 First, run the development server:
 
@@ -18,6 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [React 19](https://react.dev/) - Latest React with modern features
 - [Next.js 15](https://nextjs.org/) - App Router and Turbopack for fast development
 - [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS framework
+- [Supabase](https://supabase.com/)
 
 ### Technology Documentation
 
@@ -25,6 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [React](https://react.dev/reference/react)
 - [Next.js](https://nextjs.org/docs)
 - [Tailwind CSS](https://tailwindcss.com/docs)
+- [Supabase](https://supabase.com/docs)
 
 ## Deeper Documentation
 

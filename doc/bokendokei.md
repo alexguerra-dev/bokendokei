@@ -1,62 +1,89 @@
 # Bōkendokei
 
-## 1. **App Purpose & Vision**
+In this app there are _Pals_ and they are low resolution sprite image things that have some kind of idle animation.
 
-- A short statement of _what the app is for_ and _who it serves_.
-- Helps keep every feature idea aligned.
+They are associated with a _Adventurer_. Users are _Adventurers_.
+
+_Adventurers_ are part of a _Party_. In the case of testing the app the party will be my family.
+
+- Alex
+- Teresa
+- River
+- Finn
+
+Each Adventurer should be able to log into there own page and update things.
+
+## App Purpose & Vision
+
+This app is to make some of the mundane habits more fun.
+
+## MVP Features (Core)
+
+As an _Adventurer_, I want to be able to log into my Settings page and change to color of my _Pal_.
+
+As an _Adventurer_, I want to be able to log into my _Adventure Journal_ to change what my _Pal_ feels like.
+
+As an _Adventurer_, I want to log in with my personal 4 digit code so I can log a _Challenge_ and receive some Gold.
+
+As a user, I want to enter my 4 digit code quickly by having focus jump from one text box to another as digits are entered.
+
+I know the above is basically ZERO security. I will think about making a proper login system sometime later.
 
 ---
 
-## 2. **MVP Features (Core)**
+## Future Features (Nice-to-Have)
 
-- The _must-have_ functions that allow the app to fulfill its core purpose.
-- Each should be written as a **user story**:
-
-  - _As a \[user type], I want to \[do something], so that \[benefit]._
-
-Example:
-_As a registered user, I want to log in with email so I can access my saved data._
+- Login System
+  - Think about using something that let's me use Google as a login method.
+- Export an image or sms sticker of a _Pet_
+- When you rest so does your _pal_ (maybe, it is by the clock)
 
 ---
 
-## 3. **Future Features (Nice-to-Have)**
+## UI / UX Notes
 
-- Ideas for things to add once the MVP is working.
-- Can include stretch goals, integrations, advanced UI, etc.
-
----
-
-## 4. **UI / UX Notes**
-
-- General design language (rounded vs. sharp corners, color palette, font choices).
+- The _Pets_ should be cute, almost chibi style. Elements should be rounded and soft.
 - Layout sketches (even text-based).
-- Accessibility considerations (e.g., keyboard navigation, ARIA labels, color contrast).
+- Entering a new mood for a _Pet_ should be very fast. It is adding a log to the _Adventure Journal_
+  1. _Adventurer_ taps there image
+  2. _Adventurer_ enters 4 digit code
+  3. There should be two big buttons
+     1. `Pet's Mood`
+     2. `Log a Challenge`
+  4. Selecting `Pet's Mood` will give 10 large buttons labeled with different moods.
+  5. Selecting a _Mood_ will change the _Pets_ visual appearance and animation.
+  6. Directly after mood is selected a color picker will be shown and the Pet's background can be changed.
 
 ---
 
-## 5. **Technical Stack Decisions**
+## Technical Stack Decisions
 
 - Frontend: React + Next.js + Tailwind
-- State management: (React Query? Zustand? Context?)
 - Backend: Supabase (Auth, Database, maybe Storage)
-- Persistence: what data needs to be saved and where
-- API patterns (REST vs GraphQL vs Supabase RPC)
 
 ---
 
-## 6. **Data Model**
+## Data Model
 
-- Entities and relationships.
-- Example: `User`, `Post`, `Comment` with fields like `id`, `createdAt`, etc.
-- This guides Supabase schema.
+I am not that great with data models. Here I try...
+
+- `Adventurer`
+
+  - `id`
+  - `Passcode`
+  - `BackgroundColor`
+  - `Name`
+  - `BattleCry`
+  - `Gold`
+  - `Pal`
+
+- `Pal`
+  - `id`
+  - `Name`
+  - `Adventurer`
+  - `Mood`
+  - `Gear`
 
 ---
 
-## 7. **Open Questions**
-
-- Uncertainties you still need to decide on.
-- Keeps track of blockers without derailing flow.
-
----
-
-## Technologies
+## Open Questions
