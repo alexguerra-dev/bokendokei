@@ -1,7 +1,15 @@
 {
     "name": "bokendokei",
-    "version": "0.1.0",
+    "version": "0.0.1",
     "private": true,
+    "description": "Keep track of your adventures. Get loot. Buy gear.",
+    "author": "Alexander Guerra",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alexguerra-dev/bokendokei"
+    },
+    "homepage": "https://bokendokei.lovelyvector.com",
     "scripts": {
         "dev": "next dev --turbopack",
         "build": "next build --turbopack",

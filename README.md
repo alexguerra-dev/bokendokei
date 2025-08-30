@@ -1,5 +1,7 @@
 # Bōkendokei
 
+> Keep track of your adventures. Get loot. Buy gear.
+
 ## Getting Started
 
 First, run the development server:
