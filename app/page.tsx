@@ -1,7 +1,11 @@
+'use client'
+
+import { useApp } from './context/AppContext'
+import LoginPage from './components/LoginPage'
+import Dashboard from './components/Dashboard'
+
 export default function Home() {
-    return (
-        <div>
-            <h1>Bōkendokei</h1>
-        </div>
-    )
+    const { isAuthenticated } = useApp()
+
+    return <>{isAuthenticated ? <Dashboard /> : <LoginPage />}</>
 }
