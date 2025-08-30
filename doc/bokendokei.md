@@ -1,9 +1,11 @@
 # Bōkendokei
 
+- [Scratchpad](/doc/scratchpad.md)
+- [Look And Feel](/doc/look.md)
+
 ## 1. **App Purpose & Vision**
 
-- A short statement of _what the app is for_ and _who it serves_.
-- Helps keep every feature idea aligned.
+Habits are hard to form. Let this make starting fun.
 
 ---
 
