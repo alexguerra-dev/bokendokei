@@ -1,3 +1,7 @@
+---
+alwaysApply: false
+---
+
 # Next.js 15 App Router Patterns
 
 ## File Structure & Conventions

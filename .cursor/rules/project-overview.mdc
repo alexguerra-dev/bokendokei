@@ -1,0 +1,48 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Bōkendokei Project Overview
+
+## Project Purpose
+
+Bōkendokei is a habit-tracking app that makes forming habits fun through gamification. Users are "Adventurers" who have "Pals" (low-resolution sprite characters) that change appearance based on mood and achievements.
+
+## Core Concepts
+
+-   **Adventurers**: Users who log challenges and track progress
+-   **Pals**: Animated sprite characters that represent the user's mood and status
+-   **Party**: Groups of adventurers (e.g., family members)
+-   **Challenges**: Tasks that earn Gold when completed
+-   **Adventure Journal**: Mood tracking and personal updates
+
+## Technical Stack
+
+-   **Frontend**: Next.js 15 + React 19 + TypeScript
+-   **Styling**: Tailwind CSS v4
+-   **Backend**: Supabase (planned for Auth, Database, Storage)
+-   **Build Tool**: Turbopack for development
+
+## Project Structure
+
+-   `app/` - Next.js App Router components and pages
+-   `doc/` - Project documentation and planning
+-   `public/` - Static assets
+-   `.cursor/rules/` - AI development guidelines
+
+## Development Philosophy
+
+-   Focus on fun, engaging user experience
+-   Chibi/D&D aesthetic with rounded, soft elements
+-   Quick, intuitive interactions (4-digit codes, mood selection)
+-   Family-friendly design for shared use
+
+## Key Files
+
+-   [doc/bokendokei.md](mdc:doc/bokendokei.md) - Main project specification
+-   [doc/look.md](mdc:doc/look.md) - Design and styling guidelines
+-   [doc/scratchpad.md](mdc:doc/scratchpad.md) - Development notes and ideas
+-   [app/layout.tsx](mdc:app/layout.tsx) - Root layout with metadata
+-   [app/page.tsx](mdc:app/page.tsx) - Ho
