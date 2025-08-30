@@ -1,5 +1,10 @@
 # Bōkendokei
 
+- [Scratchpad](/doc/scratchpad.md)
+- [Look And Feel](/doc/look.md)
+
+## App Purpose & Vision
+
 In this app there are _Pals_ and they are low resolution sprite image things that have some kind of idle animation.
 
 They are associated with a _Adventurer_. Users are _Adventurers_.
@@ -13,9 +18,7 @@ _Adventurers_ are part of a _Party_. In the case of testing the app the party wi
 
 Each Adventurer should be able to log into there own page and update things.
 
-## App Purpose & Vision
-
-This app is to make some of the mundane habits more fun.
+This app is to make some of the mundane habits more fun. Habits are hard to form. Let this make starting fun.
 
 ## MVP Features (Core)
 
